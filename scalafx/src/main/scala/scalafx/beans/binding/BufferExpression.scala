@@ -71,7 +71,7 @@ class BufferExpression[E <: Any](val delegate: jfxbb.ListExpression[E]) {
 
   def ++=(elem1: E, elem2: E, elems: E*): Boolean = this.++=(Seq(elem1, elem2) ++ elems)
   def ++=(xs: Seq[E]): Boolean = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.addAll(xs.asJavaCollection)
   }
 
@@ -95,13 +95,13 @@ class BufferExpression[E <: Any](val delegate: jfxbb.ListExpression[E]) {
 
   def --=(elem1: E, elem2: E, elems: E*): Boolean = this.--=(Seq(elem1, elem2) ++ elems)
   def --=(xs: Seq[E]): Boolean = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.removeAll(xs.asJavaCollection)
   }
 
   def retainAll(elem1: E, elem2: E, elems: E*): Boolean = this.retainAll(Seq(elem1, elem2) ++ elems)
   def retainAll(xs: Seq[E]): Boolean = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.retainAll(xs.asJavaCollection)
   }
 
@@ -113,12 +113,12 @@ class BufferExpression[E <: Any](val delegate: jfxbb.ListExpression[E]) {
     * Clears the ObservableBuffer and add all elements from the collection.
     */
   def setAll(xs: Seq[E]): Boolean = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.setAll(xs.asJavaCollection)
   }
 
   def subBuffer(from: Int, to: Int): mutable.Buffer[E] = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     val v: util.List[E] = delegate.subList(from, to)
     v.asScala
   }

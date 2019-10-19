@@ -34,7 +34,7 @@ import scalafx.delegate.SFXDelegate
 import scalafx.scene.Parent
 import scalafx.scene.text.FontSmoothingType
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

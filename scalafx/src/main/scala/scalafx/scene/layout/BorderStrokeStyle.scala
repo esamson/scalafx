@@ -32,7 +32,7 @@ import scalafx.Includes._
 import scalafx.delegate.SFXDelegate
 import scalafx.scene.shape.{StrokeLineCap, StrokeLineJoin, StrokeType}
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.language.implicitConversions
 
 object BorderStrokeStyle {

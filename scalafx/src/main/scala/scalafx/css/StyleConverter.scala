@@ -33,7 +33,7 @@ import scalafx.delegate.SFXDelegate
 import scalafx.scene.text.Font
 import scalafx.scene.text.Font.sfxFont2jfx
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.language.implicitConversions
 
 /**

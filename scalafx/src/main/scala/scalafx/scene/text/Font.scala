@@ -32,7 +32,7 @@ import javafx.scene.{text => jfxst}
 import scalafx.delegate.SFXDelegate
 import scalafx.scene.text.TextIncludes._
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

@@ -38,7 +38,7 @@ import scalafx.scene.layout.Region
 import scalafx.scene.paint.Paint
 import scalafx.scene.text.Font
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

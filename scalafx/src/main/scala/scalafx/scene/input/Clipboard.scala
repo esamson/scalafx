@@ -36,7 +36,7 @@ import scalafx.scene.image.ImageIncludes.jfxImage2sfx
 import scalafx.scene.input.DataFormat._
 import scalafx.scene.input.InputIncludes.jfxClipboard2sfx
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection._
 import scala.language.implicitConversions
 

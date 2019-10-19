@@ -77,7 +77,7 @@ class MapExpression[K, V](val delegate: jfxbb.MapExpression[K, V]) {
   def +=(kv: (K, V)): V = delegate.put(kv._1, kv._2)
 
   def ++=(m: Map[K, V]): Unit = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.putAll(m.asJava)
   }
 
@@ -100,7 +100,7 @@ class MapExpression[K, V](val delegate: jfxbb.MapExpression[K, V]) {
   def -=(key: Any): V = this.delegate.remove(key)
 
   def values(): Iterable[V] = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     delegate.values().asScala
   }
 }

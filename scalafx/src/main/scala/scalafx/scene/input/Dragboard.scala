@@ -32,7 +32,7 @@ import scalafx.delegate.SFXDelegate
 import scalafx.scene.image.Image
 import scalafx.scene.image.ImageIncludes.jfxImage2sfx
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.Set
 import scala.language.implicitConversions
 

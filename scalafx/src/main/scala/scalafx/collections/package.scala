@@ -29,7 +29,7 @@ package scalafx
 import javafx.{collections => jfxc}
 import scalafx.delegate.SFXDelegate
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 /**
  * Wraps [[http://docs.oracle.com/javase/8/javafx/api/javafx/collections/package-summary.html `javafx.collections`]] package, 

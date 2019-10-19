@@ -31,7 +31,7 @@ import javafx.scene.{input => jfxsi}
 import scalafx.delegate.SFXDelegate
 import scalafx.scene.input.InputIncludes.jfxDataFormat2sfx
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection._
 import scala.language.implicitConversions
 

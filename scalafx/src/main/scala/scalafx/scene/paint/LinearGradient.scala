@@ -32,7 +32,7 @@ import javafx.scene.{paint => jfxsp}
 import scalafx.Includes._
 import scalafx.delegate.SFXDelegate
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.language.implicitConversions
 
 object LinearGradient {

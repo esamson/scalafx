@@ -78,7 +78,7 @@ object ReadOnlyBufferWrapper {
     * @return new ReadOnlyBufferWrapper from items
     */
   def apply[E <: Any](items: Seq[E]): ReadOnlyBufferWrapper[E] = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     new ReadOnlyBufferWrapper[E](
       new jfxbp.ReadOnlyListWrapper(jfxc.FXCollections.observableArrayList[E](items.asJava)))
   }
@@ -92,7 +92,7 @@ object ReadOnlyBufferWrapper {
     * @return new ReadOnlyBufferWrapper from items
     */
   def apply[E <: Any](bean: Any, name: String, items: Seq[E]): ReadOnlyBufferWrapper[E] = {
-    import scala.collection.JavaConverters._
+    import scala.jdk.CollectionConverters._
     new ReadOnlyBufferWrapper[E](
       new jfxbp.ReadOnlyListWrapper(bean, name, jfxc.FXCollections.observableArrayList[E](items.asJava)))
   }
@@ -142,7 +142,7 @@ class ReadOnlyBufferWrapper[E <: Any](override val delegate: jfxbp.ReadOnlyListW
     this(
       new jfxbp.ReadOnlyListWrapper(
         jfxc.FXCollections.observableArrayList[E](
-          scala.collection.JavaConverters.seqAsJavaListConverter(items).asJava)))
+          scala.jdk.CollectionConverters.SeqHasAsJava(items).asJava)))
   }
 
   /**
@@ -159,7 +159,7 @@ class ReadOnlyBufferWrapper[E <: Any](override val delegate: jfxbp.ReadOnlyListW
         bean,
         name,
         jfxc.FXCollections.observableArrayList[E](
-          scala.collection.JavaConverters.seqAsJavaListConverter(items).asJava)))
+          scala.jdk.CollectionConverters.SeqHasAsJava(items).asJava)))
   }
 
   /**

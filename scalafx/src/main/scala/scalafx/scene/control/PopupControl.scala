@@ -34,7 +34,7 @@ import scalafx.css.{PseudoClass, Styleable}
 import scalafx.delegate.SFXDelegate
 import scalafx.stage.PopupWindow
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

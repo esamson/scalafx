@@ -37,7 +37,7 @@ import scalafx.event.EventIncludes.jfxEventType2sfx
 import scalafx.event.{Event, EventType}
 import scalafx.scene.Node
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

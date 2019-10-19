@@ -30,7 +30,7 @@ import javafx.{animation => jfxa, event => jfxe}
 import scalafx.delegate.SFXDelegate
 import scalafx.util.Duration
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable
 import scala.language.implicitConversions
 

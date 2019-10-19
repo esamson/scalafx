@@ -33,7 +33,7 @@ import scalafx.application.JFXApp.{Parameters, PrimaryStage}
 import scalafx.delegate.SFXDelegate
 import scalafx.stage.Stage
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable.ListBuffer
 import scala.collection.{Map, Seq, mutable}
 import scala.language.implicitConversions

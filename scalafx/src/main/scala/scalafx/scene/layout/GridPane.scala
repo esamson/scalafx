@@ -38,7 +38,7 @@ import scalafx.geometry.{HPos, Insets, VPos}
 import scalafx.scene.Node
 import scalafx.scene.Node._
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.language.implicitConversions
 
 object GridPane {
